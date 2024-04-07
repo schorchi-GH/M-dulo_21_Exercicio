@@ -137,6 +137,15 @@
     <footer>
         <p>&copy; 2024 The Dude. All rights reserved.</p>
     </footer>
-    <script src="script.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const burger = document.querySelector('.burger-menu');
+            const navList = document.querySelector('.nav__list');
+
+            burger.addEventListener('click', () => {
+                navList.classList.toggle('is-active');
+            });
+        });
+    </script>
 </body>
 </html>
